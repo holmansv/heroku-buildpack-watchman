@@ -4,4 +4,4 @@
 set -eu
 
 echo "Increase File Watchers"
-echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+sysctl fs.inotify.max_user_watches=524288
